@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dayPanels = {
         'day1': document.getElementById('day1Panel'),
         'day2': document.getElementById('day2Panel'),
-        'day3': document.getElementById('day3Panel')
+        'day3': document.getElementById('day3Panel'),
+        'day4': document.getElementById('day4Panel')
     };
 
     tabButtons.forEach(btn => {
