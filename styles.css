@@ -617,7 +617,7 @@ section {
 }
 
 /* Pricing Section (Light Background) */
-.pricing-section {
+.pricing-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4rem 2rem;
@@ -1073,6 +1073,98 @@ section {
     object-fit: contain;
     mix-blend-mode: multiply; /* Mezcla de forma limpia logos con fondo blanco */
     transform: scale(1.18); /* Un poco de zoom para mayor legibilidad */
+}
+
+/* Guide Section */
+.guide-section {
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-card-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.guide-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.guide-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 380px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.guide-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.guide-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 57, 35, 0.92) 0%, rgba(0, 57, 35, 0.4) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.guide-card-overlay h3 {
+    color: #fff;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.guide-card:hover .guide-card-bg {
+    transform: scale(1.08);
+}
+
+.guide-card:hover .guide-card-overlay {
+    background: linear-gradient(to top, rgba(0, 41, 25, 0.96) 0%, rgba(0, 41, 25, 0.55) 100%);
+}
+
+.btn-guide {
+    background-color: var(--green-medium);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2.2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(7, 137, 74, 0.3);
+    transition: var(--transition);
+}
+
+.btn-guide:hover {
+    background-color: var(--green-light);
+    box-shadow: 0 6px 20px rgba(98, 168, 79, 0.4);
+    transform: translateY(-2px);
 }
 
 /* Footer */
