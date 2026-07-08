@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONILA 2026 | XVIII Congreso de Licenciados en Administración</title>
+    <meta name="description" content="XVIII Congreso Nacional e Internacional de Licenciados en Administración - CORLAD Tacna. Liderazgo, innovación y desarrollo para el Perú. Regístrate en CONILA 2026.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar (White background with green text) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="CONILA 2026 Logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#evento">El Congreso</a>
+                <a href="#programa">Programa</a>
+                <a href="#ponentes">Ponentes</a>
+                <a href="#inscripciones">Inscripciones</a>
+                <a href="#pagos">Medios de Pago</a>
+                <a href="#" class="btn-secondary-sm">Guía de Hoteles y Restaurantes</a>
+                <a href="#registro" class="btn-primary-sm">Inscríbete</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Dark Green Background) -->
+        <section id="inicio" class="dark-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="hero">
+                <div class="hero-content">
+                    <span class="badge">CONILA 2026 | Tacna, Perú</span>
+                    <h1>XVIII Congreso Nacional e Internacional de <span class="text-gradient">Licenciados en Administración</span></h1>
+                    <p class="hero-lead">"Liderazgo, innovación y desarrollo para el Perú". Un encuentro que reúne a los mejores expertos y conferencistas de nivel global.</p>
+                    
+                    <!-- Country Flags representing international scope -->
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; font-size: 1.25rem;">
+                        <span>🇵🇪</span>
+                        <span>🇨🇱</span>
+                        <span>🇧🇴</span>
+                        <span>🇨🇴</span>
+                        <span>🇧🇷</span>
+                        <span>🇲🇽</span>
+                        <span>🇺🇸</span>
+                        <span>🇨🇺</span>
+                        <span>🇪🇸</span>
+                        <span>🇭🇷</span>
+                        <span style="color: var(--text-secondary-dark); font-size: 0.9rem; margin-left: 0.5rem; display: flex; align-items: center;">Conferencistas Nacionales e Internacionales</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#registro" class="btn-primary">Inscribirme Ahora</a>
+                        <a href="#programa" class="btn-secondary">Ver Agenda Académica</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <i data-lucide="calendar"></i>
+                            <span>Del 25 al 27 de Agosto</span>
+                        </div>
+                        <h3>Tacna, Perú</h3>
+                        <p><strong>Lugar:</strong> Centro de Convenciones Jorge Basadre (Calle Blondell N° 114)</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--yellow-gold); font-weight: 600;">Modalidad: Presencial | Virtual</p>
+                        <div class="card-stats">
+                            <div class="stat-item">
+                                <span class="stat-val">+20</span>
+                                <span class="stat-lbl">Ponentes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-val">3</span>
+                                <span class="stat-lbl">Días de Evento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (White/Light Background) -->
+        <section id="evento" class="light-section">
+            <div class="info-section">
+                <div class="about-box">
+                    <h2><strong>CONILA 2026</strong> es organizado por el Colegio de Licenciados en Administración <strong>CORLAD Tacna</strong>.</h2>
+                    <p>El XVIII Congreso Nacional e Internacional de Licenciados en Administración es el principal espacio de análisis estratégico de la región en gestión, innovación y desarrollo para el Perú. Reúne a autoridades académicas, líderes corporativos, reguladores y profesionales en administración.</p>
+                    <p>Durante tres días intensivos de aprendizaje e intercambio cultural en la ciudad de Tacna, abordaremos temas cruciales sobre la digitalización, el planeamiento estratégico y los nuevos modelos organizacionales frente a las tendencias del 2030.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section (Dark Green Background) -->
+        <section id="programa" class="dark-section program-section">
+            <div class="section-label">PROGRAMA</div>
+            <h2 class="section-title">Agenda académica</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">Sujeto a ajustes y confirmación de los expositores nacionales e internacionales</p>
+
+            <!-- Rounded Pill Tabs -->
+            <div class="program-tabs" id="agendaTabs">
+                <button class="program-tab active" data-day="day1">Martes 25 de Agosto</button>
+                <button class="program-tab" data-day="day2">Miércoles 26 de Agosto</button>
+                <button class="program-tab" data-day="day3">Jueves 27 de Agosto</button>
+            </div>
+
+            <!-- Agenda Contents -->
+            <div class="program-content" id="agendaContent">
+                <!-- Day 1 (Default visible) -->
+                <div class="day-panel" id="day1Panel">
+                    <div class="schedule-card">
+                        <div class="schedule-time">14:30 hrs</div>
+                        <div class="schedule-body">
+                            <div class="schedule-type">Panel de apertura:</div>
+                            <div class="schedule-title">El escenario de la administración 2030: Desafíos y oportunidades</div>
+                            <p class="schedule-desc">Líderes regionales analizarán cómo gestionar riesgos y estructurar estrategias comerciales sustentables en el entorno actual.</p>
+                            <div class="schedule-moderator">Moderador: <strong>Nelson Shack</strong></div>
+                            <ul class="schedule-speakers">
+                                <li><strong>Sherman Roberts</strong> – Director General y Planeamiento Estratégico</li>
+                                <li><strong>Pinkas Flint</strong> – Consultor en Transformación de Negocios</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-time">16:00 hrs</div>
+                        <div class="schedule-body">
+                            <div class="schedule-type">Ceremonia Inaugural</div>
+                            <div class="schedule-title">Palabras de Apertura CONILA 2026 - CORLAD Tacna</div>
+                            <p class="schedule-desc">Discursos de bienvenida de las autoridades de la Región Tacna y directores nacionales de CORLAD.</p>
+                        </div>
+                    </div>
+
+                    <div class="schedule-divider">18:00 - Coffee Break y Networking</div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-time">18:30 hrs</div>
+                        <div class="schedule-body">
+                            <div class="schedule-type">Conferencia Magistral</div>
+                            <div class="schedule-title">Modelos Exponenciales y Liderazgo Estratégico en América Latina</div>
+                            <p class="schedule-desc">Aplicación estratégica del liderazgo para acelerar la innovación y optimizar el rendimiento corporativo.</p>
+                            <ul class="schedule-speakers">
+                                <li><strong>Rubén Sánchez</strong> – Conferencista Internacional y Consultor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 (Hidden) -->
+                <div class="day-panel hidden" id="day2Panel">
+                    <div class="schedule-card">
+                        <div class="schedule-time">09:00 hrs</div>
+                        <div class="schedule-body">
+                            <div class="schedule-type">Panel Internacional</div>
+                            <div class="schedule-title">Gestión Humana y Automatización Inteligente en Empresas Modernas</div>
+                            <p class="schedule-desc">Cómo integrar la IA en los flujos organizacionales sin perder el sentido humano del servicio.</p>
+                            <ul class="schedule-speakers">
+                                <li><strong>Pinkas Flint</strong> – Consultor Internacional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 (Hidden) -->
+                <div class="day-panel hidden" id="day3Panel">
+                    <div class="schedule-card">
+                        <div class="schedule-time">09:30 hrs</div>
+                        <div class="schedule-body">
+                            <div class="schedule-type">Conferencia de Cierre</div>
+                            <div class="schedule-title">Control Gubernamental, Auditoría y Gestión Pública para el Desarrollo</div>
+                            <p class="schedule-desc">Estrategias modernas para garantizar la transparencia pública y dinamizar las inversiones regionales.</p>
+                            <ul class="schedule-speakers">
+                                <li><strong>Nelson Shack</strong> – Especialista y Consultor del Sector Público</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section (Dark Green Background) -->
+        <section id="ponentes" class="dark-section speakers-section">
+            <div class="section-label">PONENTES</div>
+            <h2 class="section-title">Ponentes Destacados</h2>
+            <p class="section-subtitle">Profesionales de primer nivel que lideran el cambio y la innovación en el Perú y el mundo.</p>
+
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <div class="speaker-img-placeholder">PF</div>
+                    </div>
+                    <h3>Pinkas Flint</h3>
+                    <p>Especialista en Negociación y Dirección Estratégica</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <div class="speaker-img-placeholder">SR</div>
+                    </div>
+                    <h3>Sherman Roberts</h3>
+                    <p>Director de Planeamiento Estratégico Corporativo</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <div class="speaker-img-placeholder">NS</div>
+                    </div>
+                    <h3>Nelson Shack</h3>
+                    <p>Ex-Contralor y Consultor Senior en Gestión Pública</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-img-wrapper">
+                        <div class="speaker-img-placeholder">RS</div>
+                    </div>
+                    <h3>Rubén Sánchez</h3>
+                    <p>CEO de San Fernando & Consejero de Negocios</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inscriptions Modality Section (Light Background) -->
+        <section id="inscripciones" class="light-section pricing-section">
+            <div class="section-label" style="color: var(--green-dark);">INSCRIPCIONES</div>
+            <h2 class="section-title">Inversión del Congreso</h2>
+            <p class="section-subtitle" style="color: var(--yellow-gold); font-weight: 700;">PREVENTA DISPONIBLE HASTA EL 31 DE JULIO</p>
+
+            <div class="pricing-grid">
+                <!-- Colegiados -->
+                <div class="price-card">
+                    <div class="price-card-title">Colegiados</div>
+                    
+                    <div style="display: flex; justify-content: space-around; text-align: center; margin: 1rem 0;">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Presencial</span>
+                            <div class="price-amount" style="font-size: 1.85rem;">S/ 250</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 280</span>
+                        </div>
+                        <div style="border-left: 1px solid var(--border-card-light); padding-left: 1rem;">
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Virtual</span>
+                            <div class="price-amount" style="font-size: 1.85rem;">S/ 200</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 250</span>
+                        </div>
+                    </div>
+
+                    <ul class="price-features">
+                        <li>Acceso a conferencias según modalidad.</li>
+                        <li>Kit de materiales oficial de CONILA.</li>
+                        <li>Certificado avalado por CORLAD.</li>
+                    </ul>
+                    <a href="#registro" class="btn-primary-sm" style="width: 100%;">Elegir esta Opción</a>
+                </div>
+
+                <!-- Público General -->
+                <div class="price-card">
+                    <div class="price-card-title">Público General</div>
+                    
+                    <div style="display: flex; justify-content: space-around; text-align: center; margin: 1rem 0;">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Presencial</span>
+                            <div class="price-amount" style="font-size: 1.85rem; color: var(--green-medium);">S/ 300</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 320</span>
+                        </div>
+                        <div style="border-left: 1px solid var(--border-card-light); padding-left: 1rem;">
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Virtual</span>
+                            <div class="price-amount" style="font-size: 1.85rem; color: var(--green-medium);">S/ 250</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 280</span>
+                        </div>
+                    </div>
+
+                    <ul class="price-features">
+                        <li>Acceso total a las ponencias académicas.</li>
+                        <li>Materiales y bolso oficial del congreso.</li>
+                        <li>Certificación académica internacional.</li>
+                    </ul>
+                    <a href="#registro" class="btn-primary-sm" style="width: 100%;">Elegir esta Opción</a>
+                </div>
+
+                <!-- Estudiantes -->
+                <div class="price-card">
+                    <div class="price-card-title">Estudiantes</div>
+                    
+                    <div style="display: flex; justify-content: space-around; text-align: center; margin: 1rem 0;">
+                        <div>
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Presencial</span>
+                            <div class="price-amount" style="font-size: 1.85rem;">S/ 100</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 120</span>
+                        </div>
+                        <div style="border-left: 1px solid var(--border-card-light); padding-left: 1rem;">
+                            <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary-light);">Virtual</span>
+                            <div class="price-amount" style="font-size: 1.85rem;">S/ 70</div>
+                            <span style="font-size: 0.75rem; text-decoration: line-through; color: red;">Normal S/ 90</span>
+                        </div>
+                    </div>
+
+                    <ul class="price-features">
+                        <li>Acceso completo a salas físicas o Zoom.</li>
+                        <li>Material digital del congreso.</li>
+                        <li>Certificado digital estudiantil.</li>
+                    </ul>
+                    <a href="#registro" class="btn-primary-sm" style="width: 100%;">Elegir esta Opción</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medios de Pago Section (Light Background) -->
+        <section id="pagos" class="light-section" style="border-top: 1px solid var(--border-card-light); padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="info-section">
+                <div class="section-label" style="color: var(--green-dark);">PAGOS</div>
+                <h2 class="section-title">Medios de Pago Oficiales</h2>
+                <p class="section-subtitle" style="color: var(--text-secondary-light);">Realiza el depósito o transferencia y adjunta la captura en el formulario de abajo.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: left; margin-top: 2rem;">
+                    <div style="background: var(--bg-section-alt); border: 1px solid var(--border-card-light); border-radius: 12px; padding: 1.5rem 2rem;">
+                        <h4 style="color: var(--green-dark); font-size: 1.15rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                            <i data-lucide="credit-card"></i> Depósito BCP
+                        </h4>
+                        <p style="margin: 0.25rem 0;"><strong>Cuenta Corriente:</strong></p>
+                        <p style="font-family: monospace; font-size: 1.1rem; color: var(--green-medium); margin-bottom: 1rem;">540 17445351 0 90</p>
+                        <p style="margin: 0.25rem 0;"><strong>CCI (Interbancaria):</strong></p>
+                        <p style="font-family: monospace; font-size: 1.1rem; color: var(--green-medium);">002 540 117445351090 33</p>
+                    </div>
+
+                    <div style="background: var(--bg-section-alt); border: 1px solid var(--border-card-light); border-radius: 12px; padding: 1.5rem 2rem; display: flex; flex-direction: column; justify-content: center;">
+                        <h4 style="color: var(--green-dark); font-size: 1.15rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                            <i data-lucide="phone"></i> Pago rápido Yape
+                        </h4>
+                        <p style="margin: 0.25rem 0;"><strong>Número Celular:</strong></p>
+                        <p style="font-size: 1.35rem; font-weight: 700; color: var(--green-medium); font-family: monospace; margin-bottom: 0.5rem;">997 304 481</p>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary-light);">A nombre del Colegio de Licenciados en Administración.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section (Dark Green Background) -->
+        <section id="registro" class="dark-section registration-section" style="padding-top: 6rem; padding-bottom: 6rem;">
+            <div class="registration-container">
+                <div class="registration-info">
+                    <h2>Ficha de Inscripción Digital</h2>
+                    <p>Completa tus datos de registro, selecciona tu tipo de perfil (Participante o Empresa) y sube la captura de tu comprobante de pago para validar tu entrada.</p>
+                    
+                    <ul class="benefit-list">
+                        <li><i data-lucide="check-circle" class="check-icon"></i> Validación directa y confirmación automática por correo.</li>
+                        <li><i data-lucide="check-circle" class="check-icon"></i> Almacenamiento digital seguro.</li>
+                        <li><i data-lucide="check-circle" class="check-icon"></i> Registro inmediato en nuestra base de datos.</li>
+                    </ul>
+                </div>
+
+                <!-- Interactive Form Card -->
+                <div class="form-card">
+                    <!-- Form Type Selector (Switch Style) -->
+                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-dark-card); padding-bottom: 1.25rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem; font-weight: 600;">
+                            <input type="radio" name="tipoRegistro" value="independiente" checked style="accent-color: var(--green-light); width: 18px; height: 18px;">
+                            <span>Participante Independiente</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem; font-weight: 600;">
+                            <input type="radio" name="tipoRegistro" value="empresa" style="accent-color: var(--green-light); width: 18px; height: 18px;">
+                            <span>Datos de Empresa</span>
+                        </label>
+                    </div>
+
+                    <form id="registerForm" novalidate>
+                        
+                        <!-- 1. CAMPOS DE INDEPENDIENTE (Visible por defecto) -->
+                        <div id="independienteFields">
+                            <div class="form-group">
+                                <label for="docType">Tipo de Documento</label>
+                                <div class="input-wrapper">
+                                    <select id="docType" name="tipoDocumento" style="width: 100%; padding: 1rem; background-color: rgba(255,255,255,0.02); border: 1px solid var(--border-dark-card); border-radius: 8px; color: #fff; outline: none; font-family: var(--font-sans); font-size: 1rem;">
+                                        <option value="DNI" style="background-color: var(--bg-dark-card); color: #fff;">DNI (Documento Nacional de Identidad)</option>
+                                        <option value="Pasaporte" style="background-color: var(--bg-dark-card); color: #fff;">Pasaporte</option>
+                                        <option value="CE" style="background-color: var(--bg-dark-card); color: #fff;">CE (Carnet de Extranjería)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="docNumber">N° de Documento</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="file-text" class="input-icon"></i>
+                                    <input type="text" id="docNumber" name="nroDocumento" placeholder="Ej. 74839201">
+                                </div>
+                                <span class="error-msg" id="docNumberError">Por favor ingresa el número de documento</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fullName">Apellidos y Nombres (para certificado)</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="user" class="input-icon"></i>
+                                    <input type="text" id="fullName" name="nombreCompleto" placeholder="Ej. Juan Pérez Medina">
+                                </div>
+                                <span class="error-msg" id="nameError">Por favor ingresa tus nombres y apellidos</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cargo">Cargo / Profesión</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="briefcase" class="input-icon"></i>
+                                    <input type="text" id="cargo" name="cargoProfesion" placeholder="Ej. Administrador / Estudiante de Negocios">
+                                </div>
+                                <span class="error-msg" id="cargoError">Por favor ingresa tu cargo o profesión</span>
+                            </div>
+
+                            <!-- Sección de Método de pago -->
+                            <div class="form-group">
+                                <label for="paymentMethod">Método de Pago Utilizado</label>
+                                <div class="input-wrapper">
+                                    <select id="paymentMethod" name="metodoPago" style="width: 100%; padding: 1rem; background-color: rgba(255,255,255,0.02); border: 1px solid var(--border-dark-card); border-radius: 8px; color: #fff; outline: none; font-family: var(--font-sans); font-size: 1rem;">
+                                        <option value="yape" style="background-color: var(--bg-dark-card); color: #fff;">Pago rápido por Yape</option>
+                                        <option value="transferencia" style="background-color: var(--bg-dark-card); color: #fff;">Transferencia bancaria directa</option>
+                                        <option value="deposito" style="background-color: var(--bg-dark-card); color: #fff;">Depósito en cuenta BCP</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Adjunta tu Comprobante de Pago / Voucher</label>
+                                <div class="upload-area" id="dropArea">
+                                    <input type="file" id="fileInput" name="foto" accept="image/*" required class="hidden-input">
+                                    <div class="upload-content" id="uploadContent">
+                                        <i data-lucide="image" class="upload-icon"></i>
+                                        <p class="upload-text"><strong>Haz clic para subir comprobante</strong> o arrástralo aquí</p>
+                                        <p class="upload-hint">Formatos soportados: JPG, PNG. Tamaño máx. 5MB</p>
+                                    </div>
+                                    <div class="preview-content hidden" id="previewContent">
+                                        <img src="" alt="Voucher previsualización" id="imgPreview" class="image-preview">
+                                        <button type="button" class="btn-remove-image" id="btnRemoveImage">
+                                            <i data-lucide="x"></i> Cambiar comprobante
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="error-msg" id="fileError">Por favor sube la imagen de tu comprobante de pago</span>
+                            </div>
+                        </div>
+
+                        <!-- 2. CAMPOS DE EMPRESA (Oculto por defecto) -->
+                        <div id="empresaFields" class="hidden">
+                            <div class="form-group">
+                                <label for="ruc">RUC de la Empresa</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="file-digit" class="input-icon"></i>
+                                    <input type="text" id="ruc" name="ruc" placeholder="Ej. 20123456789">
+                                </div>
+                                <span class="error-msg" id="rucError">Por favor ingresa el RUC de la empresa (11 dígitos)</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="companyName">Nombre de la Empresa (Razón Social)</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="building" class="input-icon"></i>
+                                    <input type="text" id="companyName" name="nombreEmpresa" placeholder="Ej. Administraciones y Servicios del Sur S.A.C.">
+                                </div>
+                                <span class="error-msg" id="companyNameError">Por favor ingresa el nombre de la empresa</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Dirección</label>
+                                <div class="input-wrapper">
+                                    <i data-lucide="map-pin" class="input-icon"></i>
+                                    <input type="text" id="address" name="direccion" placeholder="Ej. Av. Bolognesi N° 450, Tacna">
+                                </div>
+                                <span class="error-msg" id="addressError">Por favor ingresa la dirección de la empresa</span>
+                            </div>
+                        </div>
+
+                        <!-- 3. CAMPOS COMUNES -->
+                        <div class="form-group">
+                            <label for="phone">Teléfono de Contacto</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="phone" class="input-icon"></i>
+                                <input type="tel" id="phone" name="telefono" placeholder="Ej. 987654321" required>
+                            </div>
+                            <span class="error-msg" id="phoneError">Por favor ingresa tu teléfono celular</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <div class="input-wrapper">
+                                <i data-lucide="mail" class="input-icon"></i>
+                                <input type="email" id="email" name="email" placeholder="Ej. contacto@ejemplo.com" required>
+                            </div>
+                            <span class="error-msg" id="emailError">Por favor ingresa un correo válido</span>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="btnSubmit">
+                            <span>Enviar Inscripción</span>
+                            <i data-lucide="arrow-right" class="btn-arrow"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success / Loader Overlay states -->
+                    <div class="form-overlay hidden" id="formOverlay">
+                        <div class="overlay-loader" id="overlayLoader">
+                            <div class="spinner"></div>
+                            <h3>Procesando inscripción...</h3>
+                            <p>Guardando datos en nuestra base de datos...</p>
+                        </div>
+                        
+                        <div class="overlay-success hidden" id="overlaySuccess">
+                            <div class="success-icon-wrapper">
+                                <i data-lucide="badge-check"></i>
+                            </div>
+                            <h3>¡Inscripción Enviada!</h3>
+                            <p>Tus datos han sido guardados correctamente.</p>
+                            <p class="email-note">Te hemos enviado un correo confirmando la recepción de tu registro.</p>
+                            <button type="button" class="btn-secondary" id="btnReset">Hacer otro registro</button>
+                        </div>
+
+                        <div class="overlay-error hidden" id="overlayError">
+                            <div class="error-icon-wrapper">
+                                <i data-lucide="alert-circle"></i>
+                            </div>
+                            <h3>Ocurrió un error</h3>
+                            <p id="errorMessage">No se pudo procesar tu registro en nuestra base de datos. Inténtalo más tarde.</p>
+                            <button type="button" class="btn-secondary" id="btnRetry">Intentar de nuevo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section (Light Background) -->
+        <section class="light-section sponsors-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="section-label" style="color: var(--green-dark);">ORGANIZADOR Y PATROCINADORES</div>
+            <h2 class="section-title">Aliados del Congreso</h2>
+            <div class="sponsors-grid">
+                <div class="sponsor-logo-box" style="font-size: 0.95rem; line-height: 1.2; text-align: center;">Colegio de Licenciados<br><strong>CORLAD TACNA</strong></div>
+                <div class="sponsor-logo-box">Caja Arequipa</div>
+                <div class="sponsor-logo-box">FEPCMAC</div>
+                <div class="sponsor-logo-box">Colegio de Administradores</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Light Background) -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 CORLAD Tacna. XVIII Congreso Nacional e Internacional de Licenciados en Administración.</p>
+            <p class="footer-domain">Sitio oficial: www.conila2026.pe</p>
+        </div>
+    </footer>
+
+    <!-- Logo de correo dinámico por Vercel/Local -->
+    <script>
+        window.logoUrl = window.location.origin + "/img/logo.png";
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

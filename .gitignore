@@ -1,0 +1,22 @@
+# Ignorar archivos locales grandes o innecesarios
+Flyer CONILA (editable).pdf
+*.pdf
+
+# Archivos del Sistema Operativo
+Thumbs.db
+db.ini
+desktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Carpetas de editores (VS Code / WebStorm)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
