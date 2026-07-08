@@ -1049,7 +1049,7 @@ section {
     background: #f1f6f3;
     border: 1px solid var(--border-card-light);
     border-radius: 8px;
-    padding: 1.5rem 2rem;
+    padding: 0.85rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1065,6 +1065,14 @@ section {
     border-color: var(--green-medium);
     background: #fff;
     box-shadow: 0 4px 15px rgba(0, 57, 35, 0.04);
+}
+
+.sponsor-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Mezcla de forma limpia logos con fondo blanco */
+    transform: scale(1.18); /* Un poco de zoom para mayor legibilidad */
 }
 
 /* Footer */
