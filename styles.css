@@ -7,14 +7,14 @@
     --border-card-light: #d1dfd7;
     
     /* Custom Palette from user guidelines */
-    --green-dark: #003923;      /* Deep dark green (Background for dark sections & header text) */
+    --green-dark: #358341;      /* Custom corporate green provided by user */
     --green-medium: #07894A;    /* Medium brand green (Primary buttons and accents) */
     --green-light: #62A84F;     /* Light brand green (Secondary accents/borders) */
     --yellow-gold: #E1B21E;     /* Yellow brand color (Highlights and warnings) */
     
     --bg-dark-section: var(--green-dark);
-    --bg-dark-card: #044b31;    /* Slightly lighter green for cards on dark background */
-    --border-dark-card: #086141;
+    --bg-dark-card: #276a33;    /* Adjusted dark card background to contrast with new green */
+    --border-dark-card: #459a52;
     
     --text-primary-light: #0d2119;
     --text-secondary-light: #445950;
@@ -353,6 +353,74 @@ section {
     color: var(--text-secondary-dark);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+/* Hero Section Light Styles */
+.hero-section {
+    background-color: var(--bg-section-alt);
+}
+
+.hero-section .hero h1 {
+    color: var(--green-dark);
+}
+
+.hero-section .hero-lead {
+    color: var(--text-secondary-light);
+}
+
+.hero-section .hero-subtext {
+    color: var(--text-secondary-light);
+}
+
+.hero-section .badge {
+    background: rgba(7, 137, 74, 0.08);
+    color: var(--green-dark);
+    border-color: rgba(7, 137, 74, 0.2);
+}
+
+.hero-section .hero-actions .btn-secondary {
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.hero-section .hero-actions .btn-secondary:hover {
+    background-color: var(--green-dark);
+    color: #fff;
+}
+
+/* Light Card inside Hero */
+.hero-section .hero-card {
+    background: #f7f9f8;
+    border: 1px solid var(--border-card-light);
+    box-shadow: 0 10px 30px rgba(0, 57, 35, 0.04);
+}
+
+.hero-section .card-header {
+    color: var(--green-medium);
+}
+
+.hero-section .hero-card h3 {
+    color: var(--green-dark);
+}
+
+.hero-section .hero-card p {
+    color: var(--text-secondary-light);
+}
+
+.hero-section .hero-card-mode {
+    color: var(--green-medium);
+}
+
+.hero-section .card-stats {
+    border-top: 1px solid var(--border-card-light);
+}
+
+.hero-section .stat-val {
+    color: var(--green-dark);
+}
+
+.hero-section .stat-lbl {
+    color: var(--text-secondary-light);
 }
 
 /* About / Info Section */
