@@ -16,8 +16,24 @@ function doPost(e) {
     
     var data = JSON.parse(e.postData.contents);
     
-    if (!data.tipoRegistro || !data.email) {
-      return buildResponse("error", "Faltan campos obligatorios.");
+    if (!data.tipoRegistro || !data.email || !data.telefono) {
+      return buildResponse("error", "Faltan campos obligatorios comunes (tipo de registro, email, teléfono).");
+    }
+    
+    if (data.tipoRegistro === "independiente") {
+      if (!data.nombreCompleto || !data.tipoDocumento || !data.nroDocumento || !data.cargoProfesion || !data.metodoPago || !data.foto) {
+        return buildResponse("error", "Faltan campos obligatorios para registro independiente.");
+      }
+    } else if (data.tipoRegistro === "empresa") {
+      if (!data.ruc || !data.nombreEmpresa || !data.direccion) {
+        return buildResponse("error", "Faltan campos obligatorios para registro de empresa.");
+      }
+      var rucRegex = /^\d{11}$/;
+      if (!rucRegex.test(data.ruc.toString().trim())) {
+        return buildResponse("error", "El RUC de la empresa debe tener exactamente 11 dígitos.");
+      }
+    } else {
+      return buildResponse("error", "Tipo de registro no válido.");
     }
     
     var voucherUrl = "N/A";

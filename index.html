@@ -601,7 +601,7 @@
                         <!-- 1. CAMPOS DE INDEPENDIENTE (Visible por defecto) -->
                         <div id="independienteFields">
                             <div class="form-group">
-                                <label for="docType">Tipo de Documento</label>
+                                <label for="docType">Tipo de Documento <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <select id="docType" name="tipoDocumento" style="width: 100%; padding: 1rem; background-color: rgba(255,255,255,0.02); border: 1px solid var(--border-dark-card); border-radius: 8px; color: #fff; outline: none; font-family: var(--font-sans); font-size: 1rem;">
                                         <option value="DNI" style="background-color: var(--bg-dark-card); color: #fff;">DNI (Documento Nacional de Identidad)</option>
@@ -612,7 +612,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="docNumber">N° de Documento</label>
+                                 <label for="docNumber">N° de Documento <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="file-text" class="input-icon"></i>
                                     <input type="text" id="docNumber" name="nroDocumento" placeholder="Ej. 74839201">
@@ -621,7 +621,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="fullName">Apellidos y Nombres (para certificado)</label>
+                                 <label for="fullName">Apellidos y Nombres (para certificado) <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="user" class="input-icon"></i>
                                     <input type="text" id="fullName" name="nombreCompleto" placeholder="Ej. Juan Pérez Medina">
@@ -630,7 +630,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="cargo">Cargo / Profesión</label>
+                                 <label for="cargo">Cargo / Profesión <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="briefcase" class="input-icon"></i>
                                     <input type="text" id="cargo" name="cargoProfesion" placeholder="Ej. Administrador / Estudiante de Negocios">
@@ -640,7 +640,7 @@
 
                             <!-- Sección de Método de pago -->
                             <div class="form-group">
-                                <label for="paymentMethod">Método de Pago Utilizado</label>
+                                <label for="paymentMethod">Método de Pago Utilizado <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <select id="paymentMethod" name="metodoPago" style="width: 100%; padding: 1rem; background-color: rgba(255,255,255,0.02); border: 1px solid var(--border-dark-card); border-radius: 8px; color: #fff; outline: none; font-family: var(--font-sans); font-size: 1rem;">
                                         <option value="yape" style="background-color: var(--bg-dark-card); color: #fff;">Pago rápido por Yape</option>
@@ -651,7 +651,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Adjunta tu Comprobante de Pago / Voucher</label>
+                                 <label>Adjunta tu Comprobante de Pago / Voucher <span style="color: #ff4d4d;">*</span></label>
                                 <div class="upload-area" id="dropArea">
                                     <input type="file" id="fileInput" name="foto" accept="image/*" required class="hidden-input">
                                     <div class="upload-content" id="uploadContent">
@@ -673,7 +673,7 @@
                         <!-- 2. CAMPOS DE EMPRESA (Oculto por defecto) -->
                         <div id="empresaFields" class="hidden">
                             <div class="form-group">
-                                <label for="ruc">RUC de la Empresa</label>
+                                 <label for="ruc">RUC de la Empresa <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="file-digit" class="input-icon"></i>
                                     <input type="text" id="ruc" name="ruc" placeholder="Ej. 20123456789">
@@ -682,7 +682,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="companyName">Nombre de la Empresa (Razón Social)</label>
+                                 <label for="companyName">Nombre de la Empresa (Razón Social) <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="building" class="input-icon"></i>
                                     <input type="text" id="companyName" name="nombreEmpresa" placeholder="Ej. Administraciones y Servicios del Sur S.A.C.">
@@ -691,7 +691,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="address">Dirección</label>
+                                 <label for="address">Dirección <span style="color: #ff4d4d;">*</span></label>
                                 <div class="input-wrapper">
                                     <i data-lucide="map-pin" class="input-icon"></i>
                                     <input type="text" id="address" name="direccion" placeholder="Ej. Av. Bolognesi N° 450, Tacna">
@@ -702,7 +702,7 @@
 
                         <!-- 3. CAMPOS COMUNES -->
                         <div class="form-group">
-                            <label for="phone">Teléfono de Contacto</label>
+                             <label for="phone">Teléfono de Contacto <span style="color: #ff4d4d;">*</span></label>
                             <div class="input-wrapper">
                                 <i data-lucide="phone" class="input-icon"></i>
                                 <input type="tel" id="phone" name="telefono" placeholder="Ej. 987654321" required>
@@ -711,7 +711,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
+                             <label for="email">Correo Electrónico <span style="color: #ff4d4d;">*</span></label>
                             <div class="input-wrapper">
                                 <i data-lucide="mail" class="input-icon"></i>
                                 <input type="email" id="email" name="email" placeholder="Ej. contacto@ejemplo.com" required>
