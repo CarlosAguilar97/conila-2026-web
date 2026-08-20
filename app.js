@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Config: Reemplazar este enlace con la URL del Google Apps Script Web App cuando se despliegue.
-    const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbyWGcyONiGAnOVaHgf1TT0In77jec114donehzv4GAk5riGJNqeKHjOrqOsmcnVg28/exec";
+    const DEFAULT_GAS_URL = "https://script.google.com/macros/s/AKfycbx6XYKxOacsbUL19VOPyMBvHI92ofBZ4hgn1T2o70VeNzkYEaLc7W77WqlgLN7j9Ho/exec";
     let scriptURL = localStorage.getItem('conila_gas_url') || DEFAULT_GAS_URL;
 
     // DOM Elements for form
